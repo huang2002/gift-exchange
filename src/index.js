@@ -37,7 +37,7 @@ const shuffle = array => {
     const n = array.length;
     let j, t;
     for (let i = 0; i < n; i++) {
-        j = randomIndex(n - i);
+        j = i + randomIndex(n - i);
         t = array[i];
         array[i] = array[j];
         array[j] = t;
